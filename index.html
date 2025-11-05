@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Gamer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #6B4CE5;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+        }
+
+        nav {
+            background-color: #2d2d2d;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #6B4CE5;
+        }
+
+        .page {
+            display: none;
+            padding: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        h2 {
+            color: #6B4CE5;
+            font-size: 32px;
+            margin: 30px 0 15px 0;
+        }
+
+        h3 {
+            color: #ffffff;
+            font-size: 24px;
+            margin: 25px 0 10px 0;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        img {
+            display: block;
+            margin: 30px auto;
+            max-width: 600px;
+            width: 100%;
+            border: 3px solid #6B4CE5;
+        }
+
+        ol, ul {
+            font-size: 18px;
+            margin: 15px 0 15px 40px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .prohibited {
+            color: #ff4444;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background-color: #2d2d2d;
+        }
+
+        th {
+            background-color: #6B4CE5;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-size: 18px;
+            border: 1px solid #000;
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid #444;
+            font-size: 16px;
+        }
+
+        form {
+            background-color: #2d2d2d;
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #1a1a1a;
+            color: white;
+            border: 2px solid #6B4CE5;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        button {
+            background-color: #6B4CE5;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #5a3cc9;
+        }
+
+        .social-links {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .social-links a {
+            display: inline-block;
+            background-color: #6B4CE5;
+            color: white;
+            padding: 12px 25px;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            background-color: #5a3cc9;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 3px solid #6B4CE5;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #0d0d0d;
+            color: #666;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎮 Zona Gamer 🎮</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showPage('inicio')">Inicio</a>
+        <a href="#" onclick="showPage('servicios')">Servicios</a>
+        <a href="#" onclick="showPage('contacto')">Contacto</a>
+        <a href="#" onclick="showPage('ubicacion')">Ubicación</a>
+    </nav>
+
+    <!-- PÁGINA 1: INICIO -->
+    <div id="inicio" class="page active">
+        <h2>Página para conocer más amigos gamer</h2>
+        
+        <p>Esta página web está creada para charlar y apoyar a los gamers y creadores de contenido.</p>
+        
+        <p>Aquí encontrarás amigos y te sentirás en casa.</p>
+
+        <img src="https://animalpolitico.com/_next/image?url=https%3A%2F%2Fap-cdn.sfo3.cdn.digitaloceanspaces.com%2Fuploads%2F2023%2F11%2Fthe-legend-of-zelda-pelicula-nintendo.jpg&w=3840&q=75" alt="Link de Zelda">
+
+        <h2>Nuestra Meta</h2>
+        
+        <h3>Comunidad Gamer:</h3>
+        <ol>
+            <li>Compartir videojuegos</li>
+            <li>Reseñas de juegos</li>
+            <li>Contactos y alianzas</li>
+        </ol>
+
+        <h3 class="prohibited">Prohibido:</h3>
+        <ul class="prohibited">
+            <li>HATER</li>
+            <li>CHEATERS</li>
+            <li>TROLLS</li>
+        </ul>
+
+        <h2>Los Más Jugados</h2>
+        <ul>
+            <li>Dota 2</li>
+            <li>Counter-Strike GO</li>
+            <li>GTA V</li>
+            <li>Fortnite</li>
+            <li>Roblox</li>
+            <li>Minecraft</li>
+        </ul>
+    </div>
+
+    <!-- PÁGINA 2: SERVICIOS -->
+    <div id="servicios" class="page">
+        <h2>Nuestros Servicios</h2>
+
+        <h3>Calendario de Actividades Semanales</h3>
+        <table>
+            <tr>
+                <th>Día</th>
+                <th>Hora</th>
+                <th>Actividad</th>
+            </tr>
+            <tr>
+                <td>Lunes</td>
+                <td>8:00 PM</td>
+                <td>Día de los Cómics</td>
+            </tr>
+            <tr>
+                <td>Martes</td>
+                <td>8:00 PM</td>
+                <td>Torneo CS:GO</td>
+            </tr>
+            <tr>
+                <td>Miércoles</td>
+                <td>8:00 PM</td>
+                <td>Torneo Dota 2</td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>8:00 PM</td>
+                <td>Día del Trueque</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>8:00 PM</td>
+                <td>Reunión Social</td>
+            </tr>
+        </table>
+
+        <h3>Planes de Membresía</h3>
+        <table>
+            <tr>
+                <th>Plan</th>
+                <th>Precio Mensual</th>
+                <th>Beneficios</th>
+            </tr>
+            <tr>
+                <td>Free</td>
+                <td>S/ 0.00</td>
+                <td>Acceso a foros y eventos gratuitos</td>
+            </tr>
+            <tr>
+                <td>Gamer</td>
+                <td>S/ 29.90</td>
+                <td>Torneos exclusivos y descuentos</td>
+            </tr>
+            <tr>
+                <td>Pro Gamer</td>
+                <td>S/ 59.90</td>
+                <td>Coaching y prioridad en torneos</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- PÁGINA 3: CONTACTO -->
+    <div id="contacto" class="page">
+        <h2>Contáctanos</h2>
+
+        <p>¿Estas interesado? ¡Comentanos!</p>
+
+        <form onsubmit="return handleSubmit(event)">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+
+            <label>Correo electrónico:</label>
+            <input type="email" name="email" required>
+
+            <label>Mensaje:</label>
+            <textarea name="mensaje" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <h3>Síguenos en Redes Sociales</h3>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://discord.com" target="_blank">Discord</a>
+        </div>
+    </div>
+
+    <!-- PÁGINA 4: UBICACIÓN -->
+    <div id="ubicacion" class="page">
+        <h2>Nuestra Ubicación</h2>
+
+        <p><strong> Dirección:</strong> Av. Gaming Center 456, San Isidro, Lima, Perú</p>
+        <p><strong> Horario:</strong> Lunes a Domingo de 2:00 PM - 12:00 AM</p>
+        <p><strong> Teléfono:</strong> +51 987 654 321</p>
+        <p><strong> Email:</strong> sxaxuxlx@gmail.com</p>
+
+        <h3>Encuéntranos en el Mapa</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3!2d-77.0365!3d-12.0931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA1JzM1LjIiUyA3N8KwMDInMTEuNCJX!5e0!3m2!1ses!2spe!4v1234567890"
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+
+        <h3>Cómo Llegar</h3>
+        <ul>
+            <li>Transporte Público: Metropolitano hasta Javier Prado</li>
+            <li>Auto: Estacionamiento gratuito disponible</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Zona Gamer - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            var pages = document.querySelectorAll('.page');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].classList.remove('active');
+            }
+            document.getElementById(pageId).classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+    </script>
+</body>
+</html>
